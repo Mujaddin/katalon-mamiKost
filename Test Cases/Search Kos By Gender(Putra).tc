@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Given User navigate to https://mamikos.com/cari
+When the user search kos by gender(putra)
+Then the user will get kos for specific gender</description>
+   <name>Search Kos By Gender(Putra)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>54461c20-851c-45b8-ab10-57ca2a3e21ac</testCaseGuid>
+</TestCaseEntity>
