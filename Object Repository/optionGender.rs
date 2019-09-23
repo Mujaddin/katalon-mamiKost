@@ -6,11 +6,15 @@
    <elementGuidId>c0b6787c-f8db-4e2c-bdab-c10b7be2c080</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;kosGender&quot;]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//select[@id = 'kosGender']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

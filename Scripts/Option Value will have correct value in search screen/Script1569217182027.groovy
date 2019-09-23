@@ -17,9 +17,11 @@ WebUI.openBrowser('https://mamikos.com/cari')
 
 WebUI.verifyElementPresent(findTestObject('buttonSet'), 30)
 
-WebUI.verifyOptionsPresent(findTestObject('optionGender'), ['Harian', 'Mingguan', 'Bulanan', 'Tahunan'])
+WebUI.verifyElementPresent(findTestObject('optionGender'), 30)
 
-WebUI.verifyOptionsPresent(findTestObject('optionTIme'), ['Semua', 'Khusus Putri', 'Khusus Putra', 'Putri atau Putra', 'Putri dan Campur'
+WebUI.verifyOptionsPresent(findTestObject('optionTIme'), ['Harian', 'Mingguan', 'Bulanan', 'Tahunan'])
+
+WebUI.verifyOptionsPresent(findTestObject('optionGender'), ['Semua', 'Khusus Putri', 'Khusus Putra', 'Putri atau Putra', 'Putri dan Campur'
         , 'Putra dan Campur', 'Campur'])
 
 WebUI.verifyOptionsPresent(findTestObject('optionSorting'), ['Acak', 'Harga Termurah', 'Harga Tertinggi', 'Kosong ke Penuh'
