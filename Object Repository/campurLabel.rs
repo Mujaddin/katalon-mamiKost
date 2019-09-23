@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@title = 'Putra']</value>
+         <value>//div[@title = 'Campur']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Putra</value>
+      <value>Campur</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
