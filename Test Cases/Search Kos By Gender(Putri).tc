@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Given User navigate to https://mamikos.com/cari
-When the user search kos by gender(putra)
-Then the user will get kos for specific gender</description>
+When the user search kos by gender(putri)
+Then the user will get kos for specific gender
+but the user will not get kos for another gender</description>
    <name>Search Kos By Gender(Putri)</name>
    <tag></tag>
    <comment></comment>

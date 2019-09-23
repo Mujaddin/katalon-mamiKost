@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Given User navigate to https://mamikos.com/cari
-When the user search kos by gender(putra)
-Then the user will get kos for specific gender</description>
+When the user check the option menu
+Then the user will get option menu with correct value</description>
    <name>Option Value will have correct value in search screen</name>
    <tag></tag>
    <comment></comment>
