@@ -16,21 +16,18 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser('https://mamikos.com/cari')
 
 try {
-	WebUI.click(findTestObject('buttonConfirm'))
-} catch (Exception e) {
-	e.printStackTrace()
+    WebUI.click(findTestObject('buttonConfirm'))
 }
+catch (Exception e) {
+    e.printStackTrace()
+} 
 
+WebUI.selectOptionByLabel(findTestObject('optionGender'), 'Khusus '+gender, false)
 
-WebUI.verifyElementPresent(findTestObject('buttonSet'), 30)
+WebUI.click(findTestObject('buttonSet'))
 
-WebUI.verifyElementPresent(findTestObject('optionGender'), 30)
+WebUI.verifyTextPresent('Ditemukan', false)
 
-WebUI.verifyOptionsPresent(findTestObject('optionTIme'), ['Harian', 'Mingguan', 'Bulanan', 'Tahunan'])
+WebUI.verifyTextPresent(gender, false)
 
-WebUI.verifyOptionsPresent(findTestObject('optionGender'), ['Semua', 'Khusus Putri', 'Khusus Putra', 'Putri atau Putra', 'Putri dan Campur'
-        , 'Putra dan Campur', 'Campur'])
-
-WebUI.verifyOptionsPresent(findTestObject('optionSorting'), ['Acak', 'Harga Termurah', 'Harga Tertinggi', 'Kosong ke Penuh'
-        , 'Update Terbaru'])
 

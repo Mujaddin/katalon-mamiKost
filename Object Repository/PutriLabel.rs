@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>putriLabel</name>
+   <name>PutriLabel</name>
    <tag></tag>
    <elementGuidId>4694864a-e585-4c05-8244-e7a388de0c3f</elementGuidId>
    <selectorCollection>

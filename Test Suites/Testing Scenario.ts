@@ -21,6 +21,18 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Search Kos By Gender(Putri)</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>003ab4e7-c827-4576-8cd5-4d8625203d36</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6acfb70c-d9a9-4d7d-bd9d-04ee5565220c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>4da37fc0-57e3-47d8-93a1-02818d14eb8e</guid>

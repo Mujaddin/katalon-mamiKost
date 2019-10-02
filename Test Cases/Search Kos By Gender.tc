@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Given User navigate to https://mamikos.com/cari
-When the user search kos by gender(putri)
+When the user search kos by gender(putra)
 Then the user will get kos for specific gender
 but the user will not get kos for another gender</description>
-   <name>Search Kos By Gender(Putri)</name>
+   <name>Search Kos By Gender</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>66e4d8be-c42e-4eff-901d-72bc904db006</testCaseGuid>
+   <testCaseGuid>dcb9a053-c75f-465a-bae8-8c58e8561e1f</testCaseGuid>
    <variable>
       <defaultValue>'Putra'</defaultValue>
       <description></description>
-      <id>003ab4e7-c827-4576-8cd5-4d8625203d36</id>
+      <id>817d14dd-babb-487e-9a31-1bfd7b3abd0d</id>
       <masked>false</masked>
       <name>gender</name>
    </variable>
    <variable>
       <defaultValue>'Putri'</defaultValue>
       <description></description>
-      <id>6acfb70c-d9a9-4d7d-bd9d-04ee5565220c</id>
+      <id>f2869dc4-9ec2-4147-8121-ae8d9ad7ced5</id>
       <masked>false</masked>
       <name>failed</name>
    </variable>

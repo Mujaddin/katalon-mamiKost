@@ -13,24 +13,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://mamikos.com/cari')
+WebUI.openBrowser('https://mamikos.com/login')
 
-try {
-	WebUI.click(findTestObject('buttonConfirm'))
-} catch (Exception e) {
-	e.printStackTrace()
-}
+WebUI.setText(findTestObject('txtLoginUsername'), username)
 
+WebUI.setText(findTestObject('txtLoginPassword'), password)
 
-WebUI.verifyElementPresent(findTestObject('buttonSet'), 30)
+WebUI.click(findTestObject('buttonLogin'))
 
-WebUI.verifyElementPresent(findTestObject('optionGender'), 30)
+WebUI.verifyElementPresent(findTestObject('ownerPage'), 0)
 
-WebUI.verifyOptionsPresent(findTestObject('optionTIme'), ['Harian', 'Mingguan', 'Bulanan', 'Tahunan'])
+WebUI.click(findTestObject('ownerPage'))
 
-WebUI.verifyOptionsPresent(findTestObject('optionGender'), ['Semua', 'Khusus Putri', 'Khusus Putra', 'Putri atau Putra', 'Putri dan Campur'
-        , 'Putra dan Campur', 'Campur'])
+WebUI.verifyElementPresent(findTestObject('radioVacancy'), 30)
 
-WebUI.verifyOptionsPresent(findTestObject('optionSorting'), ['Acak', 'Harga Termurah', 'Harga Tertinggi', 'Kosong ke Penuh'
-        , 'Update Terbaru'])
+WebUI.check(findTestObject('radioVacancy'))
+
+WebUI.click(findTestObject('buttonSubmit'))
+
+WebUI.uploadFile(findTestObject('imageButton'), '')
 

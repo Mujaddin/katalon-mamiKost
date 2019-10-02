@@ -15,15 +15,21 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://mamikos.com/cari')
 
-WebUI.selectOptionByLabel(findTestObject('optionGender'), 'Khusus Putri', false)
+try {
+	WebUI.click(findTestObject('buttonConfirm'))
+} catch (Exception e) {
+	e.printStackTrace()
+}
+
+WebUI.selectOptionByLabel(findTestObject('optionGender'), 'Khusus '+gender, false)
 
 WebUI.click(findTestObject('buttonSet'))
 
 WebUI.verifyTextPresent('Ditemukan', false)
 
-WebUI.verifyElementNotPresent(findTestObject('putraLabel'), 30)
+WebUI.verifyElementNotPresent(findTestObject('PutraLabel'), 30)
 
-WebUI.verifyElementPresent(findTestObject('putriLabel'), 0)
+WebUI.verifyElementPresent(findTestObject('PutriLabel'), 0)
 
 WebUI.verifyElementNotPresent(findTestObject('campurLabel'), 0)
 
